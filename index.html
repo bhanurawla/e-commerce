@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Product Store</title>
+
+<link rel="stylesheet" href="style.css">
+
+
+</head> <body>
+
+<!-- Navigation -->
+<header class="navbar">
+    <div class="logo">ShopEase<span>.</span></div>
+
+    <nav>
+        <a href="#" id="homeLink">Home</a>
+        <a href="#products">Products</a>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <p class="subtitle">WELCOME TO SHOPEASE</p>
+
+        <h1>Discover Products<br>You Will Love.</h1>
+
+        <p>
+            Explore our collection of quality products
+            at prices you'll love.
+        </p>
+
+        <a href="#products" class="hero-button">
+            Explore Products
+        </a>
+    </div>
+</section>
+
+<!-- Product Listing -->
+<main class="container" id="products">
+
+    <section class="section-heading">
+        <div>
+            <p class="subtitle">OUR COLLECTION</p>
+            <h2>Featured Products</h2>
+        </div>
+
+        <p id="productCount" class="product-count"></p>
+    </section>
+
+    <!-- Search and Filter -->
+    <section class="toolbar">
+        <input
+            type="search"
+            id="searchInput"
+            placeholder="Search products..."
+            aria-label="Search products"
+        >
+
+        <select id="categoryFilter" aria-label="Filter by category">
+            <option value="All">All Categories</option>
+        </select>
+    </section>
+
+    <!-- Products are loaded from JSON -->
+    <section
+        id="productGrid"
+        class="product-grid"
+        aria-live="polite"
+    >
+        <p>Loading products...</p>
+    </section>
+
+    <p id="noProducts" class="no-products" hidden>
+        No products found. Try another search.
+    </p>
+
+</main>
+
+<!-- Product Details -->
+<section id="detailsSection" class="details-section" hidden>
+    <div class="details-container">
+
+        <button id="backButton" class="back-button">
+            ← Back to Products
+        </button>
+
+        <div id="productDetails"></div>
+
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <h3>ShopEase<span>.</span></h3>
+    <p>Find your favorites, all in one place.</p>
+    <p>© 2026 ShopEase. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+
+</body> </html>
